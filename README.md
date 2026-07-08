@@ -35,3 +35,17 @@ http://dev-testngmybucket-0231111.s3-website-us-east-1.amazonaws.com/
 ## Result
 Successfully deployed a live static website 
 on AWS S3 with GitHub and LinkedIn links.
+
+
+## IAM User Creation
+As part of security best practices, I also 
+created an IAM user (devops-user) with specific 
+permissions instead of using the root account.
+
+Permissions attached:
+- AmazonS3FullAccess
+- AmazonEC2FullAccess
+
+Key lesson: Root account should never be used 
+for daily AWS tasks. IAM users with specific 
+permissions is the correct and secure approach.
